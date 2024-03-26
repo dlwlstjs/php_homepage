@@ -1,0 +1,252 @@
+*{
+    list-style: none;
+    text-decoration: none;
+    border-collapse: collapse;
+    margin: 0px;
+    padding: 0px;
+    color: #000;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.intro_bg{
+    background-image: url("img/homeimg.avif");
+    width: 100%;
+    height: 718px;
+}
+
+.header{
+    display: flex;
+    width: 1280px;
+    margin:auto;
+    height: 86px;
+}
+
+.nav{
+    display: flex;  /*가로로 만들어주기*/
+    justify-content: flex-end;  /*끝에 붙여주기(왼쪽에서 오른쪽으로 바뀌는 것을 알 수 있음.*/
+    width: calc(1280px - 300px);
+    line-height: 86px;  /*text의 높이를 바꿔준다.(위쪽)*/
+    /*color: #fff; --> 이렇게 바꿔주면 안됨. nav > li > a 태그에 넣어줘야함.*/ 
+}
+
+.nav > li{  /*nav -> li 태그*/
+    margin-left: 84px;
+}
+
+.nav > li > a{
+    color: #fff;
+}
+
+.search_area{      
+    width: 300px;
+    height: 40px;
+    background: rgba(0, 20, 37, 0.3);
+    border-radius: 5px;     /*둥글기*/
+    margin-top: 24px;
+
+}
+
+.search_area > form > input {
+    border: none;
+    width: 250px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0);
+    color: #fff;
+    padding-left: 10px;
+}
+
+.search_area > form > span {
+    width: 50px;
+    color: #fff;
+    font-weight: bold;  /*굵게*/
+    cursor: pointer;
+}
+
+.intro_text{
+    width: 100%;
+    margin: 231px auto 231px auto; /*여백주는 순서 : 상 우 하 좌*/
+    text-align: center;
+}
+
+h1{
+    font-size: 48px;
+    font-weight: 100;   /*100부터 900까지의 범위*/
+}
+
+h4{
+    font-size: 20px;
+    font-weight: lighter; /*가벼운 폰트 굵기*/
+}
+
+.h4_underline{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.size_18_bold{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.size_14 {
+    font-size: 14px;
+}
+
+.intro_text > h1, .intro_text > h4{
+    color: #fff;
+}
+
+.amount {
+    position: relative;         /*보이는 것만 올라가 보이게하는 것임.*/
+    top : -66px;
+    display: flex;
+    width: 1280px;
+    margin: auto;
+    background: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /*그림자*/
+}
+
+.amount > li {
+    flex: 1;
+    height: 132px;
+}
+.amount > li > div{
+    margin-top: 37px;
+    height: 57px;
+    text-align: center;
+}
+
+.amount > li:not(:last-child) > div{ /*list의 마지막 div 제외해서 적용*/
+    border-right: 1px solid #e1e1e1;   /*회색선*/
+}
+
+.main_text0{
+    width: 100%;
+    height: 601px;
+    background: #f1f2f3;
+    margin-top: -132px;             /*강제로 끌어올리기*/
+}
+
+.main_text0 > h1{
+    margin-top : 116px;
+    text-align: center;
+}
+
+.main_text0 > div > h4 {
+    text-align: center;
+}
+
+.icons{
+    display: flex;
+    width: 1280px;
+    margin: auto;
+}
+
+
+.icons > li {
+    flex: 1;
+    background: #fff;
+    margin-top: 49px;
+    height: 320px;
+    text-align: center;
+}
+
+.icons > li > .icon_img{
+    margin-top: 36px;
+}
+
+.icons > li:not(:last-child){
+    margin-right: 20px;
+}
+
+.icons > li > .size_14 {
+    margin-top: 8px;
+}
+
+.more{
+    width: 100px;
+    height: 30px;
+    background: #2f7af4;
+    color: #fff;
+    margin: auto;
+    margin-top: 15px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 27px;
+}
+
+.main_text1{
+    width: 100%;
+    height: 659px;
+}
+
+.main_text1 > h1{
+    padding: 50px;
+    text-align: center;
+}
+
+.service {
+    width: 1280px;
+    display: flex;
+    margin: 49px auto;
+    height: 427px;
+}
+
+.service > .size_14 {
+    padding: 20px;
+}
+
+.service > .size_14 > h2{
+    margin-bottom: 27px;
+}
+
+.main_text2{
+    width: 100%;
+    height: 418px;
+    background-image: url("img/contact.png");
+}
+
+.main_text2 > ul {
+    display: flex;
+    padding-top: 138px;
+}
+
+.main_text2 > ul > li {
+    flex: 1;
+    text-align: center;
+}
+
+.main_text2 > ul > li > div,
+.main_text2 > ul > li > div > h1 {
+    color: #fff;
+}
+
+.more2 {
+    width: 220px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #fff;
+    cursor: pointer;
+    margin: 16px auto;;
+}
+
+footer {
+    display: flex;
+    background: #000 0% 0% no-repeat padding-box;;
+    padding: 30px;
+}
+
+footer > div:first-child{
+    flex: 5;                /*flex는 합이 12*/
+    text-align: center;
+    color: #fff;
+}
+
+footer > div:last-child{
+    flex: 5;
+    color: #fff;
+}
+footer > div > img{
+    width: 120px;
+    height: 120px;
+}
