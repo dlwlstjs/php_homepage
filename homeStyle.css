@@ -96,6 +96,12 @@ h4{
     color: #fff;
 }
 
+.main_text2{
+    width: 100%;
+    height: 418px;
+    background-image: url("img/contact.png");
+}
+
 .amount {
     position: relative;         /*보이는 것만 올라가 보이게하는 것임.*/
     top : -66px;
@@ -105,12 +111,19 @@ h4{
     background: #fff;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /*그림자*/
 }
+.login-icon {
+    width: 30px; /* 이미지 너비 조정 */
+    height: 30px; /* 이미지 높이 자동으로 조정하여 비율 유지 */
+    margin-left: 10px;
+    margin-top: 28px;
+}
 
 .amount > li {
     flex: 1;
     height: 132px;
 }
 .amount > li > div{
+    
     margin-top: 37px;
     height: 57px;
     text-align: center;
@@ -159,9 +172,6 @@ h4{
     margin-right: 20px;
 }
 
-.icons > li > .size_14 {
-    margin-top: 8px;
-}
 
 .more{
     width: 100px;
@@ -200,11 +210,6 @@ h4{
     margin-bottom: 27px;
 }
 
-.main_text2{
-    width: 100%;
-    height: 418px;
-    background-image: url("img/contact.png");
-}
 
 .main_text2 > ul {
     display: flex;
@@ -219,6 +224,10 @@ h4{
 .main_text2 > ul > li > div,
 .main_text2 > ul > li > div > h1 {
     color: #fff;
+}
+
+.icons > li > .size_14 {
+    margin-top: 8px;
 }
 
 .more2 {
